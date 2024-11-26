@@ -13,28 +13,41 @@ Created 2 destinations in BTP CloudFoundry
 - https://sapes5.sapdevcenter.com (S0025577307-Rami123)
 - https://services.odata.org
 
-New Template + Fiori + Basic + **oData Servicce**
+-New Template + Fiori + Basic + **oData Servicce**
 (https://services.odata.org/V2/Northwind/Northwind.svc/)
-Add deployment configuration (Yes)
-Cloud Foundry + select Destination(norhtwind) from list
-Preview, start-noflp
+-Add deployment configuration (Yes)
+-Cloud Foundry + select Destination(norhtwind) from list
+-Preview, start-noflp
 
-Build, mta.yaml & deploy .mtar
-Available in Cloud Foundry - HTML5 Applications
+-Build, mta.yaml & deploy .mtar
+-Available in Cloud Foundry - HTML5 Applications
 
 Your free tier usage limit exceeded. Upgrade to the Standard plan to continue with deployment.
-**cf deploy mta_archives/sapbtpbasicnorthodata_0.0.1.mtar**
+-**cf deploy mta_archives/sapbtpbasicnorthodata_0.0.1.mtar**
 
 **simple design with oData**
-Add Views and Define Routes to Access Them
-Filter option in List report with detail screen
-List.view_wihtoutSMART.xml (normal)
-List.view.xml (smart)
+-Add Views and Define Routes to Access Them
+-Filter option in List report with detail screen
+-List.view_wihtoutSMART.xml (normal)
+-List.view.xml (smart)
+
+# basicnorthodata1 (working same as above)
+-New Template + Fiori + Basic + **Select As System + Destination with below service**
+- /V2/Northwind/Northwind.svc/
+-Add deployment configuration (Yes)
+-Cloud Foundry + select Destination(norhtwind) from list
+-Preview, start-noflp
+
+-Build, mta.yaml & deploy .mtar
+-Available in Cloud Foundry - HTML5 Applications
+
+Your free tier usage limit exceeded. Upgrade to the Standard plan to continue with deployment.
+-**cf deploy mta_archives/sapbtpbasicnorthodata_0.0.1.mtar**
 
 # basicdesign (local JSON)
-New Template + Fiori App Generator + Basic + datasource **None**
-Add deployment configuration (Yes)
-Cloud Foundry + NONE
-Preview, start-noflp
+-New Template + Fiori App Generator + Basic + datasource **None**
+-Add deployment configuration (Yes)
+-Cloud Foundry + NONE
+-Preview, start-noflp
 
 
