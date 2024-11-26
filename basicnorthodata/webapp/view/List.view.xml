@@ -1,21 +1,15 @@
-<mvc:View controllerName="sap.btp.basicnorthodata.controller.List" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
-  <Page id="listPage" title="{i18n>ListTitle}" >
-		<subHeader>
-			<Bar id="_IDGenBar1">
-				<contentLeft>
-					<SearchField id="_IDGenSearchField1" search="handleSearch"/>
-				</contentLeft>
-			</Bar>
-		</subHeader>
-		<List id="list" items="{/Products}">
-			<ObjectListItem id="_IDGenObjectListItem1" type="Navigation" press="handleListItemPress" title="{ProductName}" number="{= ((${UnitPrice} * 100) / 100).toFixed(2) }" numberUnit="{i18n>Currency}">
-				<attributes>
-					<ObjectAttribute id="_IDGenObjectAttribute1" text="{QuantityPerUnit}"/>
-				</attributes>
-				<firstStatus>
-					<ObjectStatus id="_IDGenObjectStatus1" text="{= ${Discontinued} ? ${i18n>Discontinued} : ${i18n>Available} }" state="{= ${Discontinued}? 'Error' : 'Success' }"/>
-				</firstStatus>
-			</ObjectListItem>
-		</List>
+<mvc:View controllerName="sap.btp.basicnorthodata.controller.List" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+    xmlns:smartList="sap.ui.comp.smartlist"
+    xmlns:smartTable="sap.ui.comp.smarttable"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page id="Products">
+        <smartFilterBar:SmartFilterBar id="smartFilterBar" persistencyKey="UniqueAndStablePersistencyKey" entitySet="Products" considerSelectionVariants="true" />
+        <smartList:SmartList id="smartProductList" smartFilter="smartFilterBar" entitySet="Products" expandFields="Category" header="Products List" showRowCount="true" showFullScreenButton="true" enableAutoBinding="true">
+            <smartList:listItemTemplate>
+                <StandardListItem id="listTemplate" type="Navigation" press="handleListItemPress" title="{ProductName}" info="{= ${UnitPrice} + ' €' }" description="{Category/CategoryName}" />
+            </smartList:listItemTemplate>
+        </smartList:SmartList>
     </Page>
 </mvc:View>

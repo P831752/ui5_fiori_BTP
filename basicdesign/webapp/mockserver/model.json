@@ -1,0 +1,45 @@
+{
+    "ProductCollection": [{
+        "Code": "7000001",
+        "Vacant": "Yes",
+        "CostCenter": "001001",
+        "PositionTitle": "HR"
+    }, {
+        "Code": "7000002",
+        "Vacant": "Yes",
+        "CostCenter": "001002",
+        "PositionTitle": "BRA"
+    }, {
+        "Code": "7000003",
+        "Vacant": "Yes",
+        "CostCenter": "001003",
+        "PositionTitle": "HR"
+    }, {
+        "Code": "7000004",
+        "Vacant": "Yes",
+        "CostCenter": "001004",
+        "PositionTitle": "HR"
+    }, {
+        "Code": "7000005",
+        "Vacant": "Yes",
+        "CostCenter": "001005",
+        "PositionTitle": "Finance"
+    }, {
+        "Code": "7000006",
+        "Vacant": "Yes",
+        "CostCenter": "001006",
+        "PositionTitle": "HR"
+    }, {
+        "Code": "7000007",
+        "Vacant": "Yes",
+        "CostCenter": "001007",
+        "PositionTitle": "HR"
+    }, 
+    {
+        "Code": "7000008",
+        "Vacant": "Yes",
+        "CostCenter": "001008",
+        "PositionTitle": "HR"
+    }]
+  }
+  

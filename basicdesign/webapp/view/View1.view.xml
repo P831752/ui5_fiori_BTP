@@ -1,0 +1,69 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"  xmlns="sap.m" xmlns:f="sap.f" xmlns:fb="sap.ui.comp.filterbar"  controllerName="sap.ui5.basicdesign.controller.View1" height="100%">
+	<f:DynamicPage  headerExpanded="true" class="sapUiSizeCompact">
+        <f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="Quick Vacant Check"/>
+				</f:heading>
+			</f:DynamicPageTitle>
+		</f:title>
+
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+				<f:content>
+					<fb:FilterBar persistencyKey="myPersKey" useToolbar="false" search=".onSearch" filterChange=".onFilterChange" afterVariantLoad=".onAfterVariantLoad">
+						<fb:filterGroupItems>
+								<fb:FilterGroupItem  name="Country" groupName="Group1" label="Country" visibleInFilterBar="true" mandatory="true">
+									<fb:control>
+		                                <Input id="idCountry" placeholder="Enter Country" class="sapUiSmallMarginBottom" />
+									</fb:control>
+								</fb:FilterGroupItem>
+														   
+								<fb:FilterGroupItem  name="Cost Center" groupName="Group1" label="Cost Center" visibleInFilterBar="true" mandatory="true">
+									<fb:control>
+                                        <Input id="idCostCenter" placeholder="Enter Cost Center" class="sapUiSmallMarginBottom" />
+									</fb:control>
+								</fb:FilterGroupItem>						
+							</fb:filterGroupItems>
+						</fb:FilterBar>
+				</f:content> 
+			</f:DynamicPageHeader>
+		</f:header>
+
+			<f:content>
+				<Table
+					id="table"
+					inset="false"
+					items="{
+						path: '/ProductCollection'
+					}"
+				>
+					<columns>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Code"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Vacant"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Cost Center"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Position Title"/>
+						</Column>
+					</columns>
+
+					<items>
+						<ColumnListItem vAlign="Middle">
+							<cells>
+								<ObjectIdentifier title="{Code}" />
+								<Text text="{Vacant}" />
+								<Text text="{CostCenter}" />
+								<Text text="{PositionTitle}" />
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</f:content>
+	</f:DynamicPage>
+</mvc:View>

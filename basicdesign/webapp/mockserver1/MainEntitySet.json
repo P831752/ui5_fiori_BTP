@@ -1,0 +1,62 @@
+[
+  {
+    "__metadata": {
+      "id": "1",
+      "uri": "1",
+       "type": "Namespace.MainEntityType"
+    },
+    "CODE": "70022331",
+    "VACANT": "Y",
+    "COST_CENTER": "00101",
+    "POSITION_TITLE": "HR",
+    "Id": "1"
+  },
+  {
+    "__metadata": {
+      "id": "2",
+      "uri": "2",
+       "type": "Namespace.MainEntityType"
+    },
+    "CODE": "70022332",
+    "VACANT": "Y",
+    "COST_CENTER": "00102",
+    "POSITION_TITLE": "HR",
+    "Id": "2"
+  },
+  {
+    "__metadata": {
+      "id": "3",
+      "uri": "3",
+       "type": "Namespace.MainEntityType"
+    },
+    "CODE": "70022333",
+    "VACANT": "Y",
+    "COST_CENTER": "00103",
+    "POSITION_TITLE": "HR",
+    "Id": "3"
+  },
+  {
+    "__metadata": {
+      "id": "4",
+      "uri": "4",
+       "type": "Namespace.MainEntityType"
+    },
+    "CODE": "70022334",
+    "VACANT": "Y",
+    "COST_CENTER": "00104",
+    "POSITION_TITLE": "HR",
+    "Id": "4"
+  },
+  {
+    "__metadata": {
+      "id": "5",
+      "uri": "5",
+       "type": "Namespace.MainEntityType"
+    },
+    "CODE": "70022335",
+    "VACANT": "Y",
+    "COST_CENTER": "00105",
+    "POSITION_TITLE": "HR",
+    "Id": "5"
+  }
+]
