@@ -1,53 +1,36 @@
-# basicnorthodata
-Develop Your First SAPUI5 Web App with SAP Business Application Studio
-https://developers.sap.com/group.sapui5-cf-bas.html
+## Application Details
+|               |
+| ------------- |
+|**Generation Date and Time**<br>Wed Aug 21 2024 10:29:12 GMT+0000 (Coordinated Universal Time)|
+|**App Generator**<br>@sap/generator-fiori-freestyle|
+|**App Generator Version**<br>1.14.4|
+|**Generation Platform**<br>SAP Business Application Studio|
+|**Template Used**<br>simple|
+|**Service Type**<br>None|
+|**Service URL**<br>N/A|
+|**Module Name**<br>larsento02t1|
+|**Application Title**<br>SuccessFactorsAi|
+|**Namespace**<br>|
+|**UI5 Theme**<br>sap_horizon|
+|**UI5 Version**<br>1.127.1|
+|**Enable Code Assist Libraries**<br>False|
+|**Enable TypeScript**<br>False|
+|**Add Eslint configuration**<br>False|
 
-Fiori Dev Space with Development Tools for SAP Build Work Zone extension
+## larsento02t1
 
-Entitlement/service
-- Authorization and Trust Management Service (instance)
-- Build Workzone (service)
-- SAP Business Application Studio 
+An SAP Fiori application.
 
-Created 2 destinations in BTP CloudFoundry
-- https://sapes5.sapdevcenter.com (S0025577307-Rami123)
-- https://services.odata.org
+### Starting the generated app
 
--New Template + Fiori + Basic + **oData Servicce**
-(https://services.odata.org/V2/Northwind/Northwind.svc/)
--Add deployment configuration (Yes)
--Cloud Foundry + select Destination(norhtwind) from list
--Preview, start-noflp
+-   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply run the following from the generated app root folder:
 
--Build, mta.yaml & deploy .mtar
--Available in Cloud Foundry - HTML5 Applications
+```
+    npm start
+```
 
-Your free tier usage limit exceeded. Upgrade to the Standard plan to continue with deployment.
--**cf deploy mta_archives/sapbtpbasicnorthodata_0.0.1.mtar**
+#### Pre-requisites:
 
-**simple design with oData**
--Add Views and Define Routes to Access Them
--Filter option in List report with detail screen
--List.view_wihtoutSMART.xml (normal)
--List.view.xml (smart)
-
-# basicnorthodata1 (working same as above)
--New Template + Fiori + Basic + **Select As System + Destination with below service**
-- /V2/Northwind/Northwind.svc/
--Add deployment configuration (Yes)
--Cloud Foundry + select Destination(norhtwind) from list
--Preview, start-noflp
-
--Build, mta.yaml & deploy .mtar
--Available in Cloud Foundry - HTML5 Applications
-
-Your free tier usage limit exceeded. Upgrade to the Standard plan to continue with deployment.
--**cf deploy mta_archives/sapbtpbasicnorthodata_0.0.1.mtar**
-
-# basicdesign (local JSON)
--New Template + Fiori App Generator + Basic + datasource **None**
--Add deployment configuration (Yes)
--Cloud Foundry + NONE
--Preview, start-noflp
+1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
 
